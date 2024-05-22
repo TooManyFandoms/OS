@@ -1,0 +1,10 @@
+set_robust_list(0x7ffb6dae79e0, 24)     = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], NULL, 8) = 0
+sched_getparam(28434, [0])              = 0
+sched_getscheduler(28434)               = 0 (SCHED_OTHER)
+sched_setscheduler(28434, SCHED_OTHER, [0]) = 0
+prctl(PR_SET_NAME, "ZMQbg/Reaper")      = 0
+epoll_wait(5, [{EPOLLIN, {u32=3146829152, u64=93959851396448}}], 256, -1) = 1
+poll([{fd=4, events=POLLIN}], 1, 0)     = 1 ([{fd=4, revents=POLLIN}])
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
++++ exited with 0 +++

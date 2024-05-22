@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/katerina/Рабочий стол/OS/laba6/src/node.cpp
+unistd.h
+-
+iostream
+-
+string
+-
+vector
+-
+map
+-
+zmq_f.h
+/home/katerina/Рабочий стол/OS/laba6/src/zmq_f.h
+
+/home/katerina/Рабочий стол/OS/laba6/src/zmq_f.h
+iostream
+-
+string
+-
+zmq.hpp
+-
+

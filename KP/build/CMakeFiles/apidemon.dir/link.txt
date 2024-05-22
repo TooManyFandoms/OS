@@ -1,0 +1,1 @@
+/usr/bin/c++    -fsanitize=address -g CMakeFiles/apidemon.dir/src/apidemon.cpp.o  -o apidemon  -lrt -lpthread 

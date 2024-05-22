@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/katerina/Рабочий стол/OS/KP/include/kptools.h
+string
+-
+iostream
+-
+vector
+-
+map
+-
+sys/stat.h
+-
+mutex
+-
+
+/home/katerina/Рабочий стол/OS/KP/src/client.cpp
+iostream
+-
+unistd.h
+-
+thread
+-
+sys/mman.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+sys/ipc.h
+-
+sys/sem.h
+-
+semaphore.h
+-
+fcntl.h
+-
+errno.h
+-
+string.h
+-
+../include/kptools.h
+/home/katerina/Рабочий стол/OS/KP/include/kptools.h
+vector
+-
+algorithm
+-
+map
+-
+nlohmann/json.hpp
+-
+set
+-
+iterator
+-
+random
+-
+sstream
+-
+

@@ -1,0 +1,4 @@
+/home/katerina/Рабочий стол/OS/laba6/build/CMakeFiles/rebuild_cache.dir
+/home/katerina/Рабочий стол/OS/laba6/build/CMakeFiles/edit_cache.dir
+/home/katerina/Рабочий стол/OS/laba6/build/CMakeFiles/node.dir
+/home/katerina/Рабочий стол/OS/laba6/build/CMakeFiles/main.dir

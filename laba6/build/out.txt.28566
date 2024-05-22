@@ -1,0 +1,305 @@
+set_robust_list(0x7f858119a9e0, 24)     = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], NULL, 8) = 0
+sched_getparam(28566, [0])              = 0
+sched_getscheduler(28566)               = 0 (SCHED_OTHER)
+sched_setscheduler(28566, SCHED_OTHER, [0]) = 0
+prctl(PR_SET_NAME, "ZMQbg/IO/0")        = 0
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f857899a000
+munmap(0x7f857899a000, 57040896)        = 0
+munmap(0x7f8580000000, 10067968)        = 0
+mprotect(0x7f857c000000, 135168, PROT_READ|PROT_WRITE) = 0
+socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 10
+fcntl(10, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(10, {sa_family=AF_INET, sin_port=htons(8010), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Операция выполняется в данный момент)
+epoll_ctl(7, EPOLL_CTL_ADD, 10, {0, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_DEL, 10, 0x7f857c001354) = 0
+getsockopt(10, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+setsockopt(10, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+getsockname(10, {sa_family=AF_INET, sin_port=htons(40130), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+getpeername(10, {sa_family=AF_INET, sin_port=htons(8010), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+fcntl(10, F_GETFL)                      = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_ADD, 10, {0, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+recvfrom(10, 0x7f857c001510, 12, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, 30000) = 1
+sendto(10, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0) = 10
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+recvfrom(10, "\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+recvfrom(10, 0x7f857c00151a, 2, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, 30000) = 1
+sendto(10, "\3", 1, 0, NULL, 0)         = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, 30000) = 1
+recvfrom(10, "\3", 2, 0, NULL, NULL)    = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+recvfrom(10, 0x7f857c00151b, 53, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, 30000) = 1
+sendto(10, "\0NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0) = 53
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, 30000) = 1
+recvfrom(10, "\0NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+recvfrom(10, 0x7f857c003b28, 8192, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+sendto(10, "\4\31\5READY\vSocket-Type\0\0\0\3REP", 27, 0, NULL, 0) = 27
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\4&\5READY\vSocket-Type\0\0\0\3REQ\10Iden"..., 8192, 0, NULL, NULL) = 40
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\00510pid", 8192, 0, NULL, NULL) = 9
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+sendto(10, "\1\0\0\tOK: 28562", 13, 0, NULL, 0) = 13
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\n10create 5", 8192, 0, NULL, NULL) = 14
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_ADD, 11, {0, {u32=2080379872, u64=140211287757792}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 11, {EPOLLIN, {u32=2080379872, u64=140211287757792}}) = 0
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLIN, {u32=2080379872, u64=140211287757792}}], 256, -1) = 1
+accept4(11, {sa_family=AF_INET, sin_port=htons(47612), sin_addr=inet_addr("127.0.0.1")}, [128->16], SOCK_CLOEXEC) = 12
+setsockopt(12, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+getpeername(12, {sa_family=AF_INET, sin_port=htons(47612), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+getsockname(12, {sa_family=AF_INET, sin_port=htons(8005), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+getpeername(12, {sa_family=AF_INET, sin_port=htons(47612), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+fcntl(12, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(12, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_ctl(7, EPOLL_CTL_ADD, 12, {0, {u32=2080446272, u64=140211287824192}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN, {u32=2080446272, u64=140211287824192}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}) = 0
+recvfrom(12, 0x7f857c008900, 12, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080446272, u64=140211287824192}}], 256, 30000) = 1
+sendto(12, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0) = 10
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN, {u32=2080446272, u64=140211287824192}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080446272, u64=140211287824192}}], 256, 30000) = 1
+recvfrom(12, "\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}) = 0
+recvfrom(12, 0x7f857c00890a, 2, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+epoll_wait(7, [{EPOLLOUT, {u32=2080446272, u64=140211287824192}}], 256, 30000) = 1
+sendto(12, "\3", 1, 0, NULL, 0)         = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN, {u32=2080446272, u64=140211287824192}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080446272, u64=140211287824192}}], 256, 29999) = 1
+recvfrom(12, "\3", 2, 0, NULL, NULL)    = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}) = 0
+recvfrom(12, 0x7f857c00890b, 53, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+epoll_wait(7, [{EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}], 256, 29999) = 1
+sendto(12, "\0NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0) = 53
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN, {u32=2080446272, u64=140211287824192}}) = 0
+recvfrom(12, "\0NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}) = 0
+recvfrom(12, 0x7f857c013898, 8192, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+epoll_wait(7, [{EPOLLOUT, {u32=2080446272, u64=140211287824192}}], 256, -1) = 1
+sendto(12, "\4&\5READY\vSocket-Type\0\0\0\3REQ\10Iden"..., 40, 0, NULL, 0) = 40
+epoll_wait(7, [{EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN, {u32=2080446272, u64=140211287824192}}) = 0
+recvfrom(12, "\4\31\5READY\vSocket-Type\0\0\0\3REP", 8192, 0, NULL, NULL) = 27
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}) = 0
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+sendto(12, "\1\0\0\0045pid", 8, 0, NULL, 0) = 8
+epoll_wait(7, [{EPOLLOUT, {u32=2080446272, u64=140211287824192}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN, {u32=2080446272, u64=140211287824192}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080446272, u64=140211287824192}}], 256, -1) = 1
+recvfrom(12, "\1\0\0\tOK: 28635", 8192, 0, NULL, NULL) = 13
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+sendto(10, "\1\0\0\tOK: 28635", 13, 0, NULL, 0) = 13
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379872, u64=140211287757792}}], 256, -1) = 1
+accept4(11, {sa_family=AF_INET, sin_port=htons(47614), sin_addr=inet_addr("127.0.0.1")}, [128->16], SOCK_CLOEXEC) = 13
+setsockopt(13, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+getpeername(13, {sa_family=AF_INET, sin_port=htons(47614), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+getsockname(13, {sa_family=AF_INET, sin_port=htons(8005), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+getpeername(13, {sa_family=AF_INET, sin_port=htons(47614), sin_addr=inet_addr("127.0.0.1")}, [128->16]) = 0
+fcntl(13, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(13, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+mprotect(0x7f857c021000, 4096, PROT_READ|PROT_WRITE) = 0
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_ctl(7, EPOLL_CTL_ADD, 13, {0, {u32=2080511616, u64=140211287889536}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 13, {EPOLLIN, {u32=2080511616, u64=140211287889536}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 13, {EPOLLIN|EPOLLOUT, {u32=2080511616, u64=140211287889536}}) = 0
+recvfrom(13, "\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+recvfrom(13, 0x7f857c01884a, 2, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080511616, u64=140211287889536}}], 256, 30000) = 1
+sendto(13, "\377\0\0\0\0\0\0\0\1\177\3", 11, 0, NULL, 0) = 11
+epoll_ctl(7, EPOLL_CTL_MOD, 13, {EPOLLIN, {u32=2080511616, u64=140211287889536}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080511616, u64=140211287889536}}], 256, 30000) = 1
+recvfrom(13, "\3\0", 2, 0, NULL, NULL)  = 2
+epoll_ctl(7, EPOLL_CTL_MOD, 13, {EPOLLIN|EPOLLOUT, {u32=2080511616, u64=140211287889536}}) = 0
+recvfrom(13, "NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 52, 0, NULL, NULL) = 52
+mprotect(0x7f857c022000, 8192, PROT_READ|PROT_WRITE) = 0
+mprotect(0x7f857c024000, 16384, PROT_READ|PROT_WRITE) = 0
+mprotect(0x7f857c028000, 4096, PROT_READ|PROT_WRITE) = 0
+recvfrom(13, 0x7f857c023778, 8192, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+epoll_wait(7, [{EPOLLOUT, {u32=2080511616, u64=140211287889536}}], 256, -1) = 1
+sendto(13, "\0NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0) = 53
+epoll_wait(7, [{EPOLLIN|EPOLLOUT, {u32=2080511616, u64=140211287889536}}], 256, -1) = 1
+sendto(13, "\4&\5READY\vSocket-Type\0\0\0\3REQ\10Iden"..., 40, 0, NULL, 0) = 40
+recvfrom(13, "\4\31\5READY\vSocket-Type\0\0\0\3REP", 8192, 0, NULL, NULL) = 27
+epoll_wait(7, [{EPOLLOUT, {u32=2080511616, u64=140211287889536}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 13, {EPOLLIN, {u32=2080511616, u64=140211287889536}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\0105 remove", 8192, 0, NULL, NULL) = 12
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN|EPOLLOUT, {u32=2080446272, u64=140211287824192}}) = 0
+sendto(12, "\1\0\0\0105 remove", 12, 0, NULL, 0) = 12
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080446272, u64=140211287824192}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 12, {EPOLLIN, {u32=2080446272, u64=140211287824192}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080446272, u64=140211287824192}}], 256, -1) = 1
+recvfrom(12, "\1\0\0\2OK", 8192, 0, NULL, NULL) = 6
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+sendto(10, "\1\0\0\2OK", 6, 0, NULL, 0) = 6
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080446272, u64=140211287824192}}], 256, -1) = 1
+recvfrom(12, "", 8192, 0, NULL, NULL)   = 0
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_ctl(7, EPOLL_CTL_DEL, 12, 0x7f857c011744) = 0
+close(12)                               = 0
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\02010exec 2 mv 1000", 8192, 0, NULL, NULL) = 20
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+sendto(10, "\1\0\0\5OK:10", 9, 0, NULL, 0) = 9
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\v10exec 1 mv", 8192, 0, NULL, NULL) = 15
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+sendto(10, "\1\0\0\vOK:10: 1000", 15, 0, NULL, 0) = 15
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\0200 heartbit 10000", 8192, 0, NULL, NULL) = 20
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+sendto(10, "\1\0\0\00710:Ok; ", 11, 0, NULL, 0) = 11
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\0200 heartbit 10000", 8192, 0, NULL, NULL) = 20
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+sendto(10, "\1\0\0\00710:Ok; ", 11, 0, NULL, 0) = 11
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+recvfrom(10, "\1\0\0\t10 remove", 8192, 0, NULL, NULL) = 13
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN|EPOLLOUT, {u32=2080379728, u64=140211287757648}}) = 0
+sendto(10, "\1\0\0\2OK", 6, 0, NULL, 0) = 6
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLOUT, {u32=2080379728, u64=140211287757648}}], 256, -1) = 1
+epoll_ctl(7, EPOLL_CTL_MOD, 10, {EPOLLIN, {u32=2080379728, u64=140211287757648}}) = 0
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_MOD, 13, {EPOLLIN|EPOLLOUT, {u32=2080511616, u64=140211287889536}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 13, {EPOLLIN, {u32=2080511616, u64=140211287889536}}) = 0
+epoll_ctl(7, EPOLL_CTL_DEL, 11, 0x7f857c0013e4) = 0
+close(11)                               = 0
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_DEL, 13, 0x7f857c021684) = 0
+close(13)                               = 0
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_ctl(7, EPOLL_CTL_DEL, 10, 0x7f857c001354) = 0
+close(10)                               = 0
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(7, [{EPOLLIN, {u32=1666851424, u64=93855292203616}}], 256, -1) = 1
+poll([{fd=6, events=POLLIN}], 1, 0)     = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 8)          = 8
+epoll_ctl(7, EPOLL_CTL_DEL, 6, 0x555c635a2264) = 0
+poll([{fd=6, events=POLLIN}], 1, 0)     = 0 (Timeout)
+madvise(0x7f858099a000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

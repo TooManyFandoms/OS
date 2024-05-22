@@ -1,0 +1,19 @@
+set_robust_list(0x7ffb6cae59e0, 24)     = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7ffb60000000
+munmap(0x7ffb64000000, 67108864)        = 0
+mprotect(0x7ffb60000000, 135168, PROT_READ|PROT_WRITE) = 0
+poll([{fd=9, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=9, events=POLLIN}], 1, -1)    = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=9, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "10:Ok; \n---\n", 12)          = 12
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffb6cae4a70) = 0
+poll([{fd=9, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=9, events=POLLIN}], 1, -1)    = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=9, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "10:Ok; \n---\n", 12)          = 12
+clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0},  <unfinished ...>) = ?
++++ exited with 0 +++

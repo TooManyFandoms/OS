@@ -1,0 +1,450 @@
+set_robust_list(0x7f85819b3460, 24)     = 0
+execve("node", ["node", "5", "-1"], 0x7ffd76e5d300 /* 62 vars */) = 0
+brk(NULL)                               = 0x56456a0ae000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe866b23c0) = -1 EINVAL (Недопустимый аргумент)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=78778, ...}) = 0
+mmap(NULL, 78778, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f719ff82000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzmq.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`z\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=675776, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f719ff80000
+mmap(NULL, 678128, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719feda000
+mmap(0x7f719fef0000, 430080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f719fef0000
+mmap(0x7f719ff59000, 126976, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0x7f719ff59000
+mmap(0x7f719ff78000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9d000) = 0x7f719ff78000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220q\0\0\0\0\0\0"..., 832) = 832
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\360\2300%\360\340\363'\246\332u/\364\377\246u"..., 68, 824) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=157224, ...}) = 0
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\360\2300%\360\340\363'\246\332u/\364\377\246u"..., 68, 824) = 68
+mmap(NULL, 140408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719feb7000
+mmap(0x7f719febd000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f719febd000
+mmap(0x7f719fece000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f719fece000
+mmap(0x7f719fed4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7f719fed4000
+mmap(0x7f719fed6000, 13432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719fed6000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\341\t\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1956992, ...}) = 0
+mmap(NULL, 1972224, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719fcd5000
+mprotect(0x7f719fd6b000, 1290240, PROT_NONE) = 0
+mmap(0x7f719fd6b000, 987136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x96000) = 0x7f719fd6b000
+mmap(0x7f719fe5c000, 299008, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0x7f719fe5c000
+mmap(0x7f719fea6000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d0000) = 0x7f719fea6000
+mmap(0x7f719feb4000, 10240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719feb4000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3405\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=104984, ...}) = 0
+mmap(NULL, 107592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719fcba000
+mmap(0x7f719fcbd000, 73728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f719fcbd000
+mmap(0x7f719fccf000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f719fccf000
+mmap(0x7f719fcd3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f719fcd3000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360A\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\237\333t\347\262\27\320l\223\27*\202C\370T\177"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029560, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\237\333t\347\262\27\320l\223\27*\202C\370T\177"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719fac8000
+mmap(0x7f719faea000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f719faea000
+mmap(0x7f719fc62000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f719fc62000
+mmap(0x7f719fcb0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f719fcb0000
+mmap(0x7f719fcb6000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719fcb6000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsodium.so.23", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\302\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=355016, ...}) = 0
+mmap(NULL, 357384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719fa70000
+mmap(0x7f719fa7c000, 229376, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f719fa7c000
+mmap(0x7f719fab4000, 73728, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x44000) = 0x7f719fab4000
+mmap(0x7f719fac6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x55000) = 0x7f719fac6000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpgm-5.2.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240L\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=302056, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f719fa6e000
+mmap(NULL, 321584, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719fa1f000
+mmap(0x7f719fa23000, 163840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f719fa23000
+mmap(0x7f719fa4b000, 118784, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7f719fa4b000
+mmap(0x7f719fa68000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x48000) = 0x7f719fa68000
+mmap(0x7f719fa6a000, 14384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719fa6a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnorm.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\257\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=690344, ...}) = 0
+mmap(NULL, 1420000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f8c4000
+mmap(0x7f719f8ce000, 421888, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f719f8ce000
+mmap(0x7f719f935000, 217088, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x71000) = 0x7f719f935000
+mmap(0x7f719f96a000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa5000) = 0x7f719f96a000
+mmap(0x7f719f96e000, 723680, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719f96e000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\321\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=309712, ...}) = 0
+mmap(NULL, 312128, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f877000
+mmap(0x7f719f882000, 204800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f719f882000
+mmap(0x7f719f8b4000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3d000) = 0x7f719f8b4000
+mmap(0x7f719f8c0000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x48000) = 0x7f719f8c0000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\323\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1369352, ...}) = 0
+mmap(NULL, 1368336, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f728000
+mmap(0x7f719f735000, 684032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f719f735000
+mmap(0x7f719f7dc000, 626688, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb4000) = 0x7f719f7dc000
+mmap(0x7f719f875000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14c000) = 0x7f719f875000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 ?\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=902016, ...}) = 0
+mmap(NULL, 904640, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f64b000
+mprotect(0x7f719f66d000, 700416, PROT_NONE) = 0
+mmap(0x7f719f66d000, 397312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f719f66d000
+mmap(0x7f719f6ce000, 299008, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x83000) = 0x7f719f6ce000
+mmap(0x7f719f718000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcc000) = 0x7f719f718000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240D\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=191040, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f719f649000
+mmap(NULL, 196696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f618000
+mprotect(0x7f719f61c000, 172032, PROT_NONE) = 0
+mmap(0x7f719f61c000, 114688, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f719f61c000
+mmap(0x7f719f638000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f719f638000
+mmap(0x7f719f646000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7f719f646000
+mmap(0x7f719f648000, 88, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719f648000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200$\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=22600, ...}) = 0
+mmap(NULL, 24744, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f611000
+mmap(0x7f719f613000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f719f613000
+mmap(0x7f719f615000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f719f615000
+mmap(0x7f719f616000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f719f616000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3605\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=56096, ...}) = 0
+mmap(NULL, 58344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f602000
+mmap(0x7f719f605000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f719f605000
+mmap(0x7f719f60c000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f719f60c000
+mmap(0x7f719f60f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f719f60f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\"\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=22600, ...}) = 0
+mmap(NULL, 24592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f5fb000
+mmap(0x7f719f5fd000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f719f5fd000
+mmap(0x7f719f5ff000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f719f5ff000
+mmap(0x7f719f600000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f719f600000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 G\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=101320, ...}) = 0
+mmap(NULL, 113280, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f5df000
+mmap(0x7f719f5e3000, 65536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f719f5e3000
+mmap(0x7f719f5f3000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7f719f5f3000
+mmap(0x7f719f5f7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f719f5f7000
+mmap(0x7f719f5f9000, 6784, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719f5f9000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \22\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=18816, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f719f5dd000
+mmap(NULL, 20752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f5d7000
+mmap(0x7f719f5d8000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f719f5d8000
+mmap(0x7f719f5da000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f719f5da000
+mmap(0x7f719f5db000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f719f5db000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f719f5d5000
+arch_prctl(ARCH_SET_FS, 0x7f719f5d6180) = 0
+mprotect(0x7f719fcb0000, 16384, PROT_READ) = 0
+mprotect(0x7f719f5db000, 4096, PROT_READ) = 0
+mprotect(0x7f719f5f7000, 4096, PROT_READ) = 0
+mprotect(0x7f719f600000, 4096, PROT_READ) = 0
+mprotect(0x7f719f60f000, 4096, PROT_READ) = 0
+mprotect(0x7f719fed4000, 4096, PROT_READ) = 0
+mprotect(0x7f719f616000, 4096, PROT_READ) = 0
+mprotect(0x7f719f646000, 4096, PROT_READ) = 0
+mprotect(0x7f719f718000, 57344, PROT_READ) = 0
+mprotect(0x7f719f875000, 4096, PROT_READ) = 0
+mprotect(0x7f719f8c0000, 8192, PROT_READ) = 0
+mprotect(0x7f719fcd3000, 4096, PROT_READ) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f719f5d3000
+mprotect(0x7f719fea6000, 45056, PROT_READ) = 0
+mprotect(0x7f719f96a000, 12288, PROT_READ) = 0
+mprotect(0x7f719fa68000, 4096, PROT_READ) = 0
+mprotect(0x7f719fac6000, 4096, PROT_READ) = 0
+mprotect(0x7f719ff78000, 28672, PROT_READ) = 0
+mprotect(0x564568469000, 4096, PROT_READ) = 0
+mprotect(0x7f719ffc3000, 4096, PROT_READ) = 0
+munmap(0x7f719ff82000, 78778)           = 0
+set_tid_address(0x7f719f5d6450)         = 28635
+set_robust_list(0x7f719f5d6460, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f719febdbf0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f719fecb3c0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f719febdc90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f719fecb3c0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x56456a0ae000
+brk(0x56456a0cf000)                     = 0x56456a0cf000
+futex(0x7f719feb46bc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f719feb46c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+read(3, "0-7\n", 8192)                  = 4
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(3, /* 26 entries */, 32768)  = 752
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+getpid()                                = 28635
+sched_getaffinity(28635, 128, [0, 1, 2, 3, 4, 5, 6, 7]) = 8
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=542, ...}) = 0
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 542
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=78778, ...}) = 0
+mmap(NULL, 78778, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f719ff82000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls/haswell", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/tls", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/haswell", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=77824, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls/haswell", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/tls", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/haswell", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=77824, ...}) = 0
+openat(AT_FDCWD, "/lib/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls/haswell", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/tls", 0x7ffe866af3e0)        = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/haswell", 0x7ffe866af3e0)    = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/avx512_1", 0x7ffe866af3e0)   = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib/x86_64", 0x7ffe866af3e0)     = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls/haswell", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/tls", 0x7ffe866af3e0)    = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/haswell/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/haswell/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/haswell/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/haswell", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/avx512_1/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/avx512_1", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib/x86_64", 0x7ffe866af3e0) = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/usr/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+stat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+munmap(0x7f719ff82000, 78778)           = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=78778, ...}) = 0
+mmap(NULL, 78778, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f719ff82000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3005\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=51832, ...}) = 0
+mmap(NULL, 79672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f719f5bf000
+mmap(0x7f719f5c2000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f719f5c2000
+mmap(0x7f719f5c9000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f719f5c9000
+mmap(0x7f719f5cb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f719f5cb000
+mmap(0x7f719f5cd000, 22328, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f719f5cd000
+close(3)                                = 0
+mprotect(0x7f719f5cb000, 4096, PROT_READ) = 0
+munmap(0x7f719ff82000, 78778)           = 0
+openat(AT_FDCWD, "/etc/protocols", O_RDONLY|O_CLOEXEC) = 3
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2932, ...}) = 0
+read(3, "# Internet (IP) protocols\n#\n# Up"..., 4096) = 2932
+lseek(3, 0, SEEK_CUR)                   = 2932
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+eventfd2(0, EFD_CLOEXEC)                = 3
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+fcntl(3, F_GETFL)                       = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+getrandom("\xc1\x95\xc4\x92\x92\x66\x63\x02\xf7\x73\xed\x65\x2e\x47\xd0\x11", 16, 0) = 16
+getrandom("\x84\x23\xb5\xb6\xf4\x00\x24\xdb\xa7\xab\xa2\xc4\xb2\x4e\x14\x32", 16, 0) = 16
+eventfd2(0, EFD_CLOEXEC)                = 4
+fcntl(4, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+fcntl(4, F_GETFL)                       = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+epoll_create1(EPOLL_CLOEXEC)            = 5
+epoll_ctl(5, EPOLL_CTL_ADD, 4, {0, {u32=1779174752, u64=94856131906912}}) = 0
+epoll_ctl(5, EPOLL_CTL_MOD, 4, {EPOLLIN, {u32=1779174752, u64=94856131906912}}) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f719edbe000
+mprotect(0x7f719edbf000, 8388608, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f719f5bdd30, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[28636], tls=0x7f719f5be700, child_tidptr=0x7f719f5be9d0) = 28636
+eventfd2(0, EFD_CLOEXEC)                = 6
+fcntl(6, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+fcntl(6, F_GETFL)                       = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+epoll_create1(EPOLL_CLOEXEC)            = 7
+epoll_ctl(7, EPOLL_CTL_ADD, 6, {0, {u32=1779192416, u64=94856131924576}}) = 0
+epoll_ctl(7, EPOLL_CTL_MOD, 6, {EPOLLIN, {u32=1779192416, u64=94856131924576}}) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f719e5bd000
+mprotect(0x7f719e5be000, 8388608, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f719edbcd30, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[28637], tls=0x7f719edbd700, child_tidptr=0x7f719edbd9d0) = 28637
+eventfd2(0, EFD_CLOEXEC)                = 8
+fcntl(8, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+fcntl(8, F_GETFL)                       = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+brk(0x56456a0f0000)                     = 0x56456a0f0000
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+eventfd2(0, EFD_CLOEXEC)                = 9
+fcntl(9, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+fcntl(9, F_GETFL)                       = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=8, events=POLLIN}], 1, -1)    = 1 ([{fd=8, revents=POLLIN}])
+read(8, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=8, events=POLLIN}], 1, -1)    = 1 ([{fd=8, revents=POLLIN}])
+read(8, "\1\0\0\0\0\0\0\0", 8)          = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=8, events=POLLIN}], 1, -1)    = 1 ([{fd=8, revents=POLLIN}])
+read(8, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+getpid()                                = 28635
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=8, events=POLLIN}], 1, -1)    = 1 ([{fd=8, revents=POLLIN}])
+read(8, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=8, events=POLLIN}], 1, -1)    = 1 ([{fd=8, revents=POLLIN}])
+read(8, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(8, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(9, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=3, events=POLLIN}], 1, -1)    = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\1\0\0\0\0\0\0\0", 8)          = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+futex(0x7f719edbd9d0, FUTEX_WAIT, 28637, NULL) = 0
+close(7)                                = 0
+close(6)                                = 0
+close(5)                                = 0
+close(4)                                = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

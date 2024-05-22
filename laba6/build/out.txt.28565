@@ -1,0 +1,47 @@
+set_robust_list(0x7f858199b9e0, 24)     = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], NULL, 8) = 0
+sched_getparam(28565, [0])              = 0
+sched_getscheduler(28565)               = 0 (SCHED_OTHER)
+sched_setscheduler(28565, SCHED_OTHER, [0]) = 0
+prctl(PR_SET_NAME, "ZMQbg/Reaper")      = 0
+epoll_wait(5, [{EPOLLIN, {u32=1666833760, u64=93855292185952}}], 256, -1) = 1
+poll([{fd=4, events=POLLIN}], 1, 0)     = 1 ([{fd=4, revents=POLLIN}])
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f8574000000
+munmap(0x7f8578000000, 67108864)        = 0
+mprotect(0x7f8574000000, 135168, PROT_READ|PROT_WRITE) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 9, {0, {u32=1946159968, u64=140211153537888}}) = 0
+epoll_ctl(5, EPOLL_CTL_MOD, 9, {EPOLLIN, {u32=1946159968, u64=140211153537888}}) = 0
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_ctl(5, EPOLL_CTL_ADD, 8, {0, {u32=1946160000, u64=140211153537920}}) = 0
+epoll_ctl(5, EPOLL_CTL_MOD, 8, {EPOLLIN, {u32=1946160000, u64=140211153537920}}) = 0
+poll([{fd=4, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(5, [{EPOLLIN, {u32=1946159968, u64=140211153537888}}, {EPOLLIN, {u32=1946160000, u64=140211153537920}}], 256, -1) = 2
+poll([{fd=9, events=POLLIN}], 1, 0)     = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\1\0\0\0\0\0\0\0", 8)          = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=9, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=8, events=POLLIN}], 1, 0)     = 1 ([{fd=8, revents=POLLIN}])
+read(8, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_wait(5, [{EPOLLIN, {u32=1946159968, u64=140211153537888}}], 256, -1) = 1
+poll([{fd=9, events=POLLIN}], 1, 0)     = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=9, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_ctl(5, EPOLL_CTL_DEL, 9, 0x7f8574000b64) = 0
+write(4, "\1\0\0\0\0\0\0\0", 8)         = 8
+close(9)                                = 0
+epoll_wait(5, [{EPOLLIN, {u32=1946160000, u64=140211153537920}}, {EPOLLIN, {u32=1666833760, u64=93855292185952}}], 256, -1) = 2
+poll([{fd=8, events=POLLIN}], 1, 0)     = 1 ([{fd=8, revents=POLLIN}])
+read(8, "\1\0\0\0\0\0\0\0", 8)          = 8
+poll([{fd=8, events=POLLIN}], 1, 0)     = 0 (Timeout)
+epoll_ctl(5, EPOLL_CTL_DEL, 8, 0x7f8574000b84) = 0
+close(8)                                = 0
+poll([{fd=4, events=POLLIN}], 1, 0)     = 1 ([{fd=4, revents=POLLIN}])
+read(4, "\1\0\0\0\0\0\0\0", 8)          = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_ctl(5, EPOLL_CTL_DEL, 4, 0x555c6359dd64) = 0
+poll([{fd=4, events=POLLIN}], 1, 0)     = 0 (Timeout)
+madvise(0x7f858119b000, 8368128, MADV_DONTNEED) = 0
+exit(0)                                 = ?
++++ exited with 0 +++

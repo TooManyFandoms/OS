@@ -1,0 +1,5 @@
+/home/katerina/Рабочий стол/OS/KP/build/CMakeFiles/rebuild_cache.dir
+/home/katerina/Рабочий стол/OS/KP/build/CMakeFiles/server.dir
+/home/katerina/Рабочий стол/OS/KP/build/CMakeFiles/edit_cache.dir
+/home/katerina/Рабочий стол/OS/KP/build/CMakeFiles/apidemon.dir
+/home/katerina/Рабочий стол/OS/KP/build/CMakeFiles/client.dir
